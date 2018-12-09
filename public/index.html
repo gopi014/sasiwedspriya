@@ -6,23 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sasi weds Priya</title>
     <style type="text/css">
-        .full-height {
-            position: relative;
-            height: 100%;
-        }
 
         html,
         body {
-            height: 100%;
-        }
-
-        .wrapper {
-            min-height: 100%;
-            height: auto !important;
-            /* This line and the next line are not necessary unless you need IE6 support */
-            height: 100%;
-            margin: 0 auto -34px;
-            /* the bottom margin is the negative value of the footer's height */
+            max-width: 100%;
+            overflow-x: hidden;
         }
     </style>
 
@@ -42,48 +30,33 @@
         * {
             box-sizing: border-box
         }
-
-        .full-height {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            margin: auto;
-            /* background: #000; */
-            font-family: Raleway, sans-serif;
-            display: table;
-        }
-
         .container {
-            margin-top: 10px;
+            width:100%;
+            height:100vh;
+            overflow: hidden;
+            /* margin-top: 10px;
             text-align: center;
             width: 370px;
-            border: 1px solid #f8f8f8;
+            border: 1px solid #f8f8f8; */
         }
 
 
         .slider {
-            height: 100%;
-            width: 370px;
+            height: 65vh;
+            width: 100%;
             max-width: 100%;
-            position: relative;
-            margin: auto;
         }
-
-
         .slider img {
             max-width: 100%;
-            width: 370px;
-            height: 500px;
+            width: 100%;
+            height: 100%;
         }
-
         .location {
-            margin-left: 80px;
             position: relative;
-            width: 220px;
-            margin-top: 20px;
-            line-height: 30px;
+            margin-top: 1vh;
+            margin-left: 25%;
+            margin-right:25%;
+            line-height: 6vh;
             padding: 5px;
             border-radius: 2px;
             background-color: #3d7bf1;
@@ -91,8 +64,8 @@
             font-family: Helvetica;
             font-size: 14px;
             font-weight: bold;
-            text-align: left;
             color: #ffffff;
+            text-align: left;
         }
 
         .location img {
@@ -106,8 +79,6 @@
 </head>
 
 <body>
-    <div class="wrapper">
-
         <div class="container">
             <div class="slider" style="display: block;">
                 <img src="images/invite.jpg">
@@ -117,15 +88,16 @@
                 <a href="https://goo.gl/maps/MA8KrWUbRrD2" target="_blank" style="text-decoration:none;">
                     <div class="location">
                         <img src="images/image3.png">&nbsp;&nbsp;
-                        <span>View on Google Maps</span>
+                        <span>Venue Details</span>
                     </div>
                 </a>
             </div>
             <div class="details">
-                <a id="cal" style="text-decoration:none;">
-                    <div class="location">
+                <a href="/images/sasiwedspriya.ics" target="_blank" style="text-decoration:none;">
+                    <!-- <a target="_blank" style="text-decoration:none;" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnU5Y3Ftbm52azN1bmg0N204dm9jNDFxcW8gYWtpbGFuMjk5MEBt&amp;tmsrc=akilan2990%40gmail.com">                  -->
+                       <div class="location">
                         <img src="images/calendar.png">&nbsp;&nbsp;
-                        <span>Add to calendar</span>
+                        <span>Save the Date</span>
                     </div>
                 </a>
             </div>
