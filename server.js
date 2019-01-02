@@ -7,8 +7,8 @@ const nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'testerm818@gmail.com',
-    pass: '123@qwer'
+    user: 'sasiwedspriya@gmail.com',
+    pass: 'Qwerty@123'
   }
 });
 app.use(express.static(__dirname + '/public'));
@@ -51,7 +51,7 @@ app.get("/sendics", function (req, res) {
         "END:VCALENDAR\n";
 
       const mailOptions = {
-        from: 'gopiforroses@gmail.com', // sender address
+        from: 'sasiwedspriya@gmail.com', // sender address
         to: req.query.email, // list of receivers
         subject: 'Sasi weds Priya,Save the date 10th Feb 2019', // Subject line
         html: '<p>Hi,<br/>Thanks for time.We look forward for your blessings in person on the day of occassion.<br/><br/> With Love <br/>Sasi & Priya</p>', // plain text body
