@@ -174,8 +174,8 @@
                 "UID:ics.terminsysteme.de1544262195\n" +
                 "DTSTAMP:20181208T104315\n" +
                 "CLASS:PUBLIC\n" +
-                "DTSTART;TZID=Asia/Calcutta:20190210T183000\n" +
-                "DTEND;TZID=Asia/Calcutta:20190210T223000\n" +
+                "DTSTART:20190210T183000\n" +
+                "DTEND:20190210T223000\n" +
                 "LOCATION:R S Kalyana Mandapam,Oragadam Rd, Vijayalakshmi Puram, Ambattur, Chennai, Tamil Nadu 600053\n" +
                 "SUMMARY:Sasi weds Priya\n" +
                 "DESCRIPTION:wedding reception\n" +
@@ -189,7 +189,6 @@
             $('#cal').click(function () {
                 var email = document.getElementById('email').value;
                 var xhttp = new XMLHttpRequest();
-                console.log(email);
                 window.open("data:text/calendar;charset=utf8," + escape(event));
                 xhttp.open("GET", "/sendics?email=" + email, true);
                 xhttp.send();
