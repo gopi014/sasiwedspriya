@@ -44,17 +44,18 @@ app.get("/sendics", function (req, res) {
         "DESCRIPTION:wedding reception\n" +
         "BEGIN:VALARM\n" +
         "ACTION:DISPLAY\n" +
-        "TRIGGER:-PT2880M\n" +
+        "TRIGGER:-PT48H\n" +
+        "DURATION:PT15M\n"+
         "DESCRIPTION:Erinnerung\n" +
         "END:VALARM\n" +
         "END:VEVENT\n" +
         "END:VCALENDAR\n";
 
       const mailOptions = {
-        from: 'sasiwedspriya@gmail.com', // sender address
+        from: '"Sasi Weds Priya" <sasiwedspriya@gmail.com>', // sender address
         to: req.query.email, // list of receivers
         subject: 'Sasi weds Priya,Save the date 10th Feb 2019', // Subject line
-        html: '<p>Hi,<br/>Thanks for time.We look forward for your blessings in person on the day of occassion.<br/><br/> With Love <br/>Sasi & Priya</p>', // plain text body
+        html: '<p>Hi,<br/>Thanks for your time. We look forward for your blessings in person on the day of occassion.<br/><br/> With Love <br/>Sasi & Priya</p>', // plain text body
         attachments: [{ // file on disk as an attachment
           content: event,
           filename: 'SasiwedsPriya.ics',
